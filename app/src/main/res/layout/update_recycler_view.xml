@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#fff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPGRADE TO V2"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txtOfferDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are now shifting our server from Priscripto Sender to Priscripto Sender V2, while this change can interrupt few opearting services from the previous app. So for user server, we have shifter their data on this version"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/toContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textColor="#f97e2c"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pharmacy Store"
+            android:textColor="#f97e2c"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/toContent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f97e2c"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtToChat"
+                android:layout_width="wrap_content"
+                android:maxWidth="280dp"
+                android:layout_below="@id/fromContent"
+                android:layout_height="wrap_content"
+                android:text="This is my message to check if the layout margin working properly or not and if it's working then how's the interface is looking, is it any good"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/txtToTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:59 PM"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:layout_marginTop="-13dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

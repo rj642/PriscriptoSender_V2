@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cardview_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_attach_money_24"/>
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="OFFERS"
+                    android:textColor="#fff"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="2dp"
+                    android:textSize="15sp"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"/>
+
+                <TextView
+                    android:id="@+id/txtOfferDescription"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Place an order of above 300 and get 10% discount, Offer will be valid till 2nd of October only. Apply fast!"
+                    android:textAlignment="viewStart"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="2dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="T&amp;C\napplies*"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
